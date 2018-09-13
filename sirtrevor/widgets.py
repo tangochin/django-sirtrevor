@@ -1,7 +1,7 @@
 import json
+
 from django import forms
 from django.conf import settings
-from django.core.urlresolvers import reverse
 from django.forms.widgets import Media
 from django.utils.encoding import force_text
 from . import custom_blocks_registry

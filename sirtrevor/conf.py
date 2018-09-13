@@ -1,5 +1,8 @@
-from django.conf import settings
-from django.core.urlresolvers import reverse_lazy
+import django
+if django.VERSION[0] < 2:
+    from django.core.urlresolvers import reverse_lazy
+else:
+    from django.urls import reverse_lazy
 from appconf import AppConf
 
 
